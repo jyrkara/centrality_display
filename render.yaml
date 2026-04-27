@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: centrality_web_display
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: DEBUG
+        value: False

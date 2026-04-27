@@ -1,0 +1,15 @@
+.venv
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.DS_Store
+.env
+.ipynb_checkpoints/
+
+# Ignore all output files by default
+output/*
+
+# But include the required CSV files for deployment
+!output/readability_metrics_1934-2024.csv
+!output/directed_centralities_1934-2025.csv
