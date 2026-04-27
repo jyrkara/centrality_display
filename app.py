@@ -22,8 +22,7 @@ directed_metrics_df = directed_metrics_df[directed_metrics_df['year'] != '2025']
 # Define metrics
 metrics = [
     'flesch_kincaid', 'gunning_fog', 'smog_index', 'dale_chall',
-    'word_count', 'degree', 'eigenvector', 'betweenness', 'closeness',
-    'subgraph', 'pagerank', 'harmonic',
+    'word_count', 'degree', 'eigenvector', 'betweenness', 'closeness', 'pagerank', 'harmonic',
 ]
 
 titles = {
@@ -36,7 +35,6 @@ titles = {
     'eigenvector': 'Eigenvector Centrality',
     'betweenness': 'Betweenness Centrality',
     'closeness': 'Closeness Centrality',
-    'subgraph': 'Subgraph Centrality',
     'pagerank': 'Pagerank Centrality',
     'harmonic': 'Harmonic Centrality'
 }
